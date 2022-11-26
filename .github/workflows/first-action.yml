@@ -1,0 +1,13 @@
+name: First Workflow
+on: workflow_dispatch
+jobs:
+  # Name of jobs you can change it
+  first-job:
+    # Run on : https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners    
+    runs-on: ubuntu-latest
+    # Step : Shell script
+    steps:
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Print good bye
+        run: echo "Bye Bye!"
